@@ -6,13 +6,13 @@
 /*   By: agomez-b <agomez-b@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/29 12:06:23 by agomez-b          #+#    #+#             */
-/*   Updated: 2022/09/23 13:30:43 by agomez-b         ###   ########.fr       */
+/*   Updated: 2022/09/23 14:15:19 by agomez-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
 	int		i;
 	int		sign;

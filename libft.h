@@ -6,7 +6,7 @@
 /*   By: agomez-b <agomez-b@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/01 13:08:18 by agomez-b          #+#    #+#             */
-/*   Updated: 2022/09/17 18:49:25 by agomez-b         ###   ########.fr       */
+/*   Updated: 2022/09/23 15:27:15 by agomez-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 # include <stddef.h>
 # include <stdlib.h>
 
-int		ft_atoi(char *str);
+int		ft_atoi(const char *str);
 // ft_bzero.c
 // ft_calloc.c
 int		ft_isalnum(int c);
@@ -32,15 +32,15 @@ int		ft_isprint(int c);
 // ft_memcpy.c
 // ft_memmove.c
 // ft_memset.c
-// ft_strchr.c
-// ft_strdup.c
-// ft_strlcat.c
-size_t	ft_strlcpy(char *dest, char *src, size_t len);
-size_t	ft_strlen(char *str);
-int		ft_strncmp(char *s1, char *s2, unsigned int n);
+char	*ft_strchr(const char *s, int c);
+char	*ft_strdup(const char *s1);
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
+size_t	ft_strlcpy(char *dest, const char *src, size_t dstsize);
+size_t	ft_strlen(const char *str);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
 // ft_strnstr.c
-// ft_strrchr.c
-int		ft_tolower(unsigned char c);
-int		ft_toupper(unsigned char c);
+char	*ft_strrchr(const char *s, int c);
+int		ft_tolower(int c);
+int		ft_toupper(int c);
 
 #endif
